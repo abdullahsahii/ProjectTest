@@ -1,0 +1,17 @@
+<%= @response %>
+
+<ul>
+  <% @posts.each do |post| %>
+    <li>
+      <strong><%= post.title %></strong>
+    </li>
+    <li>
+      <p>
+        <%= post.body %>
+      </p>
+
+    </li>
+  <% end %>
+</ul>
+<%= will_paginate @posts %>
+
